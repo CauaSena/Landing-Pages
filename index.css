@@ -138,9 +138,8 @@ h2 ~ p{
 }
 
 .cards p, .cards a{
-    font: normal 14px Times, sans-serif;
+    font: normal 16px Times, sans-serif;
     line-height: 25px;
-    
 }
 .cards a{
     font-weight: 700;
@@ -157,6 +156,51 @@ h2 ~ p{
     flex-direction: column;
     justify-content: flex-end;
 }
+#services .cards p{
+    font-size: 14px;
+}
 
+#about .cards{
+    box-sizing: border-box;
+    padding: 43px 25px 30px 50px;
+    height: 200px;
+}
 
+#about .cards h3{
+    font-size: 19px;
+    margin: 0 0 10px 0;
+}
+
+#about .cards p{
+    height: 50px;
+    font-size: 16px;
+}
+
+#works .cards{
+    height: 270px;
+}
+
+#works .cards img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px auto;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#works .cards h3, #works .cards p{
+    margin: 25px auto;
+    text-align: center;
+} 
+
+#works button{
+    width: 180px;
+    height: auto;
+    background-color: white;
+    padding: 15px 20px;
+    border: 1px solid grey;
+    border-radius: 30px;
+    box-shadow: 3px 2px 6px grey;
+}
 
