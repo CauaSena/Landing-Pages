@@ -204,3 +204,36 @@ h2 ~ p{
     box-shadow: 3px 2px 6px grey;
 }
 
+#testimonials .cards{
+    height: auto;
+    display: grid;
+    grid-template-columns: .5fr 1.5fr;
+    grid-template-rows: .4fr .25fr 1.5fr;
+    grid-template-areas: 
+    "img-user  info-user"
+    "stars stars"
+    "text text";
+}
+
+#testimonials .cards div {
+    grid-area: info-user;
+    padding: 15px 0;
+}
+#testimonials .cards div + p {
+    grid-area: stars;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.relatos {
+    grid-area: text;
+}
+
+#testimonials .cards img {
+    grid-area: img-user;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
