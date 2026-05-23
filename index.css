@@ -22,7 +22,7 @@ nav div h2{
     text-align: right;
 }
 
-ul {
+nav > ul {
     box-sizing: content-box;
     padding: 0 0 0 200px;
     align-items: center;
@@ -31,8 +31,60 @@ ul {
     gap: 30px;
 }
 
-li{
+nav > ul > li{
     font: 300 16px Times, sans-serif;
     list-style: none;
     cursor: pointer;
 }
+
+main{
+    padding: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    font: bold 55px  Arial, serif;
+}
+
+main article{
+    width: 550px;
+}
+
+article p{
+    margin: 20px 0;
+    font: normal 20px Times, sans-serif;
+}
+
+article button {
+    width: 250px;
+    height: 50px;
+    border-radius: 40px;
+    margin: auto 0 auto 10px;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 2px 3px grey;
+}
+
+article div {
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 70px;
+}
+
+article ul li{
+    list-style: none;
+    font: bold 22px Arial, sans-serif;
+}
+
+picture {
+    margin: auto;
+}
+img{
+    width: 500px;
+    border-radius: 15px;
+}
+
