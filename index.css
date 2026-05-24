@@ -14,10 +14,11 @@ nav {
 }
 
 nav div {
-    width: 200px;
+    width: 210px;
 }
 
 nav div h2{
+    font-size: 26px;
     margin:13px auto;
     text-align: right;
 }
@@ -57,14 +58,18 @@ article p{
     font: normal 20px Times, sans-serif;
 }
 
-article button {
+button{
     width: 250px;
     height: 50px;
     border-radius: 40px;
-    margin: auto 0 auto 10px;
     border: 1px solid black;
     background-color: white;
     box-shadow: 2px 3px grey;
+}
+article button {
+    width: 250px;
+    height: 50px;
+    margin: auto 0 auto 10px;
 }
 
 article div {
@@ -92,12 +97,16 @@ img{
 h2 {
     font: bold 40px Arial, sans-serif;
     text-align: center;
-    margin: 50px auto 10px;
+    margin: 60px auto 20px;
 }
-
-h2 ~ p{
+p{
     font: normal 20px Times, serif;
     text-align: center;
+}
+h2 + p{
+    font: normal 20px Times, serif;
+    text-align: center;
+    margin-bottom: 105px;
 }
 
 .container{
@@ -197,11 +206,7 @@ h2 ~ p{
 #works button{
     width: 180px;
     height: auto;
-    background-color: white;
     padding: 15px 20px;
-    border: 1px solid grey;
-    border-radius: 30px;
-    box-shadow: 3px 2px 6px grey;
 }
 
 #testimonials .cards{
@@ -237,3 +242,60 @@ h2 ~ p{
     background-color: gray;
 }
 
+
+#gallery picture{
+    display: grid;
+    margin: 60px 80px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr .5fr 1fr;
+    grid-template-areas: 
+    "img-1 img-1 img-5"
+    "img-2 img-3 ."
+    "img-4 img-4 img-6"
+    ;
+    gap: 30px;
+}
+#gallery img{
+    width: 100%;
+}
+
+#gallery .img-1 {
+    grid-area: img-1;
+}
+#gallery .img-2 {
+    grid-area: img-2;
+}
+#gallery .img-3 {
+    grid-area: img-3;
+}
+#gallery .img-4 {
+    grid-area: img-4;
+}
+#gallery .img-5 {
+    grid-area: img-5;
+}
+#gallery .img-6 {
+    grid-area: img-6;
+}
+
+#gallery button{
+    display: block;
+    margin: 30px auto 75px;
+}
+
+footer{
+    padding: 140px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-image: linear-gradient(to bottom right, #1a252f, #2c3e50,#1a252f);
+    color: white;
+}
+
+footer div{
+    width: 200px;
+    align-items:start;
+}
+footer div p{
+    text-align: left;
+}
