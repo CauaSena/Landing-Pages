@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    color: #6b7280;
 }
 
 nav {
@@ -36,6 +37,10 @@ nav > ul > li{
     font: 300 16px Times, sans-serif;
     list-style: none;
     cursor: pointer;
+}
+
+a{
+    text-decoration: none;
 }
 
 main{
@@ -100,8 +105,9 @@ h2 {
     margin: 60px auto 20px;
 }
 p{
-    font: normal 20px Times, serif;
+    font: normal 18px Times, serif;
     text-align: center;
+    line-height: 25px;
 }
 h2 + p{
     font: normal 20px Times, serif;
@@ -137,9 +143,18 @@ h2 + p{
     box-shadow: 1px 3px 12px rgba(48, 43, 43, 0.226);
 }
 
-
-.cards a{
+.container .cards a{
+    font-weight: bold;
     margin: 13px 0 0;
+}
+
+.container .cards a img{
+    width: 17px;
+    margin-left: 10px;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    vertical-align: text-top;
 }
 
 .cards h3{
@@ -147,11 +162,9 @@ h2 + p{
 }
 
 .cards p, .cards a{
+    text-align: left;
     font: normal 16px Times, sans-serif;
     line-height: 25px;
-}
-.cards a{
-    font-weight: 700;
 }
 
 .cards picture{
@@ -284,18 +297,100 @@ h2 + p{
 }
 
 footer{
-    padding: 140px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    position: relative;
+    height: 360px;
+    padding: 100px;
     background-image: linear-gradient(to bottom right, #1a252f, #2c3e50,#1a252f);
+}
+
+.foot-div{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.foot-div h3{
+    font-size: 22px;
+    margin: 0 0 25px;
     color: white;
 }
 
-footer div{
-    width: 200px;
+.foot-div div{
+    width: 350px;
     align-items:start;
 }
-footer div p{
+.foot-div div p{
     text-align: left;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.foot-div div a{
+    line-height: 30px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.foot-div div img{
+    width: 30px;
+    border-radius: 0;
+    box-shadow: none;
+    vertical-align: middle;
+}
+
+.infos-petshop{
+    width: 200px;
+    position: absolute;
+    border-radius: 20px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, .10);
+    bottom: 110px;
+    right: 140px;
+}
+
+.infos-petshop h3{
+    color: white;
+    margin: 0 0 15px;
+}
+
+.infos-petshop p{
+    text-align: left;
+    color: rgba(255, 255, 255, .8);
+}
+
+.infos-petshop span{
+    display: inline-block;
+    color: #85c1a6;
+    margin: 15px 0 0;
+}
+.socials{
+    position: absolute;
+    left: 100px;
+    top: 270px;
+    width: 300px;
+}
+
+.socials a{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 15px;
+    background-color: rgba(255, 255, 255, .10);
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 50%;
+}
+
+footer .foot-last{
+    width: 85%;
+    margin: 176px 0 0;
+    padding: 30px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10px;
+}
+
+footer .foot-last ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
 }
