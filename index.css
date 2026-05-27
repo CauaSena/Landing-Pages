@@ -104,10 +104,6 @@ article ul li{
     list-style: none;
     font: bold 2em Arial, sans-serif;
 }
-article div> ul >li >p{
-    font-size: 0.5em;
-    line-height: 0em;
-}
 
 picture {
     width: 100%;
@@ -120,57 +116,52 @@ main img{
 }
 
 h2 {
-    font: bold 40px Arial, sans-serif;
+    font: bold 1.8em Arial, sans-serif;
     text-align: center;
-    margin: 60px auto 20px;
 }
 p{
-    font: normal 18px Times, serif;
+    font: normal 1em Times, serif;
     text-align: left;
-    line-height: 25px;
+    line-height: 1.5em;
 }
+section{
+    padding: 17% 0;
+}
+
 h2 + p{
-    font: normal 20px Times, serif;
+    font: normal 1.2em Times, serif;
     text-align: center;
-    margin-bottom: 105px;
+    margin: 4% 0 20%;
 }
 
 .container{
-    margin: 70px auto;
+    width: 95%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-#services .container{
-    width: 85%;
-    margin: 70px auto;
-    justify-content: flex-start;
-    gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .cards{
-    width: 340px;
-    justify-content: end;
+    width: 100%;
+    margin: 0% 0 5%;
     align-items: flex-start;
-    gap: 10px;
-    padding: 30px;
+    padding: 3%;
     border-radius: 20px;
+    background-color: white;
     border: .1px solid rgba(48, 43, 43, 0.226);
     box-shadow: 1px 3px 12px rgba(48, 43, 43, 0.226);
 }
 
 .container .cards a{
     font-weight: bold;
-    margin: 13px 0 0;
+    margin: 2% 0 0;
 }
 
 .container .cards a img{
-    width: 17px;
-    margin-left: 10px;
+    width: 5%;
+    margin-left: 2%;
     border: none;
     box-shadow: none;
     border-radius: 0;
@@ -178,75 +169,85 @@ h2 + p{
 }
 
 .cards h3{
-    font: bold 17px Arial, serif;
+    font: bold 1.3em Arial, serif;
 }
 
 .cards p, .cards a{
     text-align: left;
-    font: normal 16px Times, sans-serif;
-    line-height: 25px;
+    margin: 5% 0;
+    font: normal 1em Times, sans-serif;
+    line-height: 1.5em;
 }
 
 .cards picture{
-    width: 100px;
+    width: 100%;
+}
+
+#services{
+    background-image: linear-gradient(to bottom, rgba(146, 223, 223, 0.05) 3%, white  25%);
 }
 
 #services .cards{
-    width: 200px;
-    height: 175px;
+    width: 100%;
+    height: auto;
+    padding: 10% 3%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
+
 #services .cards p{
-    font-size: 14px;
+    font-size: 1em;
 }
 
+#about{
+    background-image: linear-gradient(120deg, rgba(93, 173, 226, .13) 18%, white  60%, rgba(133, 193, 166, .1) 70%);
+}
+    
 #about .cards{
-    box-sizing: border-box;
-    padding: 43px 25px 30px 50px;
-    height: 200px;
+    background-color: white;
+    padding: 8% 14% 2%;
+    height: auto;
 }
 
-#about .cards h3{
-    font-size: 19px;
-    margin: 0 0 10px 0;
-}
-
-#about .cards p{
-    height: 50px;
-    font-size: 16px;
+#works{
+    background-image: linear-gradient(180deg, white  82% , rgba(93, 173, 226, .09) 91%);
 }
 
 #works .cards{
-    height: 270px;
+    height: 15%;
 }
 
 #works .cards img{
-    width: 100px;
-    height: 100px;
+    width: 27%;
+    height: 27%;
     display: block;
-    margin: 10px auto;
+    margin:auto auto 3%;
     background-color: black;
     border-radius: 50%;
 }
 
 #works .cards h3, #works .cards p{
-    margin: 25px auto;
     text-align: center;
 } 
 
 #works button{
-    width: 180px;
+    width: 45%;
     height: auto;
-    padding: 15px 20px;
+    margin: 8% auto 0;
+    padding: 1em;
+}
+
+#testimonials{
+    background-image: linear-gradient(120deg, rgba(243, 229, 245, 1)9%, rgba(250, 250, 250, 1) 21%, rgba(227, 242, 253, 1) 98%);
 }
 
 #testimonials .cards{
     height: auto;
+    padding: 3% 5% 0;
     display: grid;
-    grid-template-columns: .5fr 1.5fr;
-    grid-template-rows: .4fr .25fr 1.5fr;
+    grid-template-columns: 25vw 75vw;
+    grid-template-rows: 10vh 7vh 23vh;
     grid-template-areas: 
     "img-user  info-user"
     "stars stars"
@@ -255,28 +256,35 @@ h2 + p{
 
 #testimonials .cards div {
     grid-area: info-user;
-    padding: 15px 0;
+    vertical-align: bottom;
+    margin: 6% 0 0;
 }
+
+#testimonials .cards div > p{
+    margin: 0;
+}
+
 #testimonials .cards div + p {
     grid-area: stars;
-    font-size: 25px;
-    letter-spacing: 10px;
+    font-size: 1.6em;
+    letter-spacing: 0.4em;
+    line-height: 1.5em;
 }
 
 .relatos {
     grid-area: text;
+    width: 85%;
 }
 
 #testimonials .cards img {
     grid-area: img-user;
-    width: 75px;
-    height: 75px;
+    width: 65%;
+    height: auto;
     border-radius: 50%;
     background-color: gray;
 }
 
-
-#gallery picture{
+/* #gallery picture{
     display: grid;
     margin: 60px 80px;
     grid-template-columns: repeat(3, 1fr);
@@ -287,13 +295,21 @@ h2 + p{
     "img-4 img-4 img-6"
     ;
     gap: 30px;
+} */
+
+#gallery picture{
+    width: 93%;
+    display: block;
+    margin: auto;
 }
+
 #gallery img{
     width: 100%;
+    margin: 5% 0;
     border-radius: 15px;
 }
 
-#gallery .img-1 {
+/* #gallery .img-1 {
     grid-area: img-1;
 }
 #gallery .img-2 {
@@ -311,10 +327,15 @@ h2 + p{
 #gallery .img-6 {
     grid-area: img-6;
 }
+ */
+#gallery p{
+    text-align: center;
+    margin: 7% 0;
+}
 
 #gallery button{
     display: block;
-    margin: 30px auto 75px;
+    margin: 0 auto;
 }
 
 footer{
